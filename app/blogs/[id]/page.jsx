@@ -49,19 +49,11 @@ const page = ({params}) => {
         </div>
       <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
         <Image className='border-4 border-white' src={data.image} alt='' width={1280} height={720} />
-        <h1 className='my-8 text-[26px] font-semibold'>Introduction:</h1>
-        <p>{data.description}</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Step 1: Self-Reflection and Goal </h3>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Step 2: Self-Reflection and Goal </h3>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Step 3: Self-Reflection and Goal </h3>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-        <p className='my-3 '>Before you can manage your lifestyle, you must have a clear goal</p>
-          <h3 className='my-5 text-[18px] font-semibold'>Conclusion:</h3>
-        <p className='my-3 '>Manage your lifestyle, you must have a clear goal</p>
+       
+       <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}>
+         
+       </div>
+       
        <div className='my-24 '>
           <p className='text-black font font-semibold my-4'>Share this article on social media</p>
             <div className='flex'>
